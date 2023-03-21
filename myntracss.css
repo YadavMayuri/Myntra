@@ -161,7 +161,7 @@
 
 .brand-products{
     width: 100%;
-    height: 404px;
+    height: 100%;
     /* border: 2px solid orange; */
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +183,7 @@
 
 .top-picks{
     width: 100%;
-    height: 220px;
+    height: 100%;
     /* border: 2px solid green; */
     display: flex;
     
@@ -243,7 +243,7 @@
 
 .brand-slash-price{
     width: 100%;
-    height: 410px;
+    height: 100%;
     /* border: 2px solid orange; */
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +254,7 @@
 
 .b-slash-price{
     width: 14.2% ;
-    height: 200px;
+    height: 220px;
     /* border: 1px solid greenyellow; */
 }
 
@@ -347,45 +347,101 @@ height: 100%;
 /* foooter */
 .footer{
     width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+    color:#696e79 ;
+    background-color: #fafbfc;
+    letter-spacing: 0.3px;
 
+}
+.footer h5{
+    color: black;
 }
 .main-footer{
     height: 100%;
     width: 85%;
-    margin: auto;
-    border: 1px solid red;
+    margin:  auto;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
+   
 }
 
-.online-shopping{
-    height: 150px;
+.online-shopping-links{
+    height: 100%;
     width: 19%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+ h5{
+    margin: 10px 0px ;
 }
 .customer-policies{
-    height: 150px;
+    height: 100%;
     width: 19%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    padding: 5px;
 }
 .myntra-app{
-    height: 150px;
+    height: 100%;
     width:29%;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    padding: 5px;
+}
+.myntra-app>i{
+    font-size: 22px;
+    margin-right: 10px;
+
 }
 .policy{
-    height: 150px;
+    height: 100%;
     width:29%;
-    border: 1px solid black;
+    /* border: 1px solid black;] */
+    padding: 5px;
+}
+.policies{
+    display: flex;
+    margin-top: 14px;
+}
+.policies > img{
+    height: 45px;
+    width: 50px;
+}
+.policies>p{
+    margin-left: 10px;
+    color: #696e79;
+   
+}
+.policies>p>b{
+    color: black;
+}
+.app-img{
+    display: flex;
+
+}
+.img-apps{
+    width: 120px;
+    height: 50px;
+}
+.img-apps>img{
+    width: 100%;
+    height: 100%;
+}
+.img-app{
+    width: 120px;
+    height: 40px;
+    margin-top: 6px;
+}
+.img-app>img{
+    width: 100%;
+    height: 100%;
 }
 
 
-
-
-
-
-
-
+.myntra-app >i{
+    color: #696e79;
+}
 
 
 
