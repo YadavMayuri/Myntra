@@ -101,6 +101,8 @@
     color: #282c3f;
 }
 
+
+
   /* screen css */
   #screen >div{
     margin-bottom: 50px;
@@ -110,8 +112,9 @@
 
 .slider{
     width: 100%;
-    height: 350px;
+    height: 330px;
     /* border: 1px solid red; */
+   
 }
 .slider>img{
     width: 100%;
@@ -125,11 +128,13 @@
     width: 95%;
     height: 40px;
     margin: auto;
+    margin-bottom: 10px;
     
 }
 .deal-head h1{
-    color: #282c3f;
-    letter-spacing: 4px;
+    color: #3e4152;
+    letter-spacing: 2.24px;
+    font-size: 28.8px;
     
     
 }
@@ -137,13 +142,14 @@
 
  .deal-products{
     width: 100%;
-    height: 232px;
+    height: 234px;
     /* border: 2px solid blue; */
     display: flex;
+
  }
 .product{
     width: 100%;
-    height: 232px;
+    height: 234px;
     /* border: 2px solid black; */
 }
 .product> img{
@@ -164,7 +170,7 @@
 }
 
 .product-brand{
-    width: 12.3% ;
+    width: 12% ;
     height: 200px;
     /* border: 1px solid greenyellow; */
 }
@@ -184,7 +190,7 @@
 }
 .pic{
     width: 15%;
-    height: 214px ;
+    height: 220px ;
     /* border: 1px solid red; */
 }
 .pic>img{
@@ -197,13 +203,15 @@
 
 .all-category{
     width: 100%;
-    height: 200px;
+    height: 100%;
     /* border: 2px solid red; */
     display: flex;
-    /* justify-content: ; */
+    flex-wrap: wrap;
+    
+    
 }
 .category{
-    width: 13%;
+    width: 12.5%;
     height: 195px;
     /* border: 1px solid green; */
 }
@@ -216,9 +224,10 @@
 
 .deals-on-brands{
     width: 100%;
-    height: 250px;
+    height: 750px;
     /* border: 1px solid rebeccapurple; */
     display: flex;
+    flex-wrap: wrap;
 }
 .deal{
     width: 12.5%;
@@ -229,6 +238,148 @@
     width: 100%;
     height: 100%;
 }
+
+/* BRANDS AT SLASHED PRICES  */
+
+.brand-slash-price{
+    width: 100%;
+    height: 410px;
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+
+
+}
+
+.b-slash-price{
+    width: 14.2% ;
+    height: 200px;
+    /* border: 1px solid greenyellow; */
+}
+
+.b-slash-price>img{
+ width: 100%;
+ height: 100%;
+}
+
+
+/* best buys */
+.best-buys{
+    width: 100%;
+    height: 410px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.best-buy{
+    width: 12.5%;
+    height: 200px ;
+    /* border: 1px solid red; */
+}
+.best-buy>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* mynta luxe */
+
+.myntra-luxe{
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.m-luxe{
+    width: 12.5%;
+    height: 200px ;
+    /* border: 1px solid red; */
+}
+.m-luxe >img{
+    width: 100%;
+    height: 100%;
+}
+
+/* gift cards */
+
+.gift-cards{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.g-cards{
+    width: 25%;
+    height: 270px;
+    /* border: 1px solid blue; */
+}
+.g-cards>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* gift products */
+
+.gift-products{
+    width: 100%;
+    height: 210px;
+    /* border: 2px solid orange; */
+    display: flex;
+    
+
+ }
+.product-gift{
+    width: 13%;
+    height: 210px;
+    /* border: 2px solid greenyellow; */
+}
+.product-gift>img{
+width: 100%;
+height: 100%;
+}
+
+/* foooter */
+.footer{
+    width: 100%;
+
+}
+.main-footer{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.online-shopping{
+    height: 150px;
+    width: 19%;
+    border: 1px solid black;
+}
+.customer-policies{
+    height: 150px;
+    width: 19%;
+    border: 1px solid blue;
+}
+.myntra-app{
+    height: 150px;
+    width:29%;
+    border: 1px solid orange;
+}
+.policy{
+    height: 150px;
+    width:29%;
+    border: 1px solid black;
+}
+
+
 
 
 
