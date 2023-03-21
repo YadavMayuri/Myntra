@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    vertical-align:super;
+    /* vertical-align:super; */
 }
 
 #navbar {
@@ -122,12 +122,14 @@
 
 .deal-head{
     /* border: 1px solid red; */
-    width: 90%;
+    width: 95%;
     height: 40px;
     margin: auto;
+    
 }
-.deal-head>h1{
+.deal-head h1{
     color: #282c3f;
+    letter-spacing: 4px;
     
     
 }
