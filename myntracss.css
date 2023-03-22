@@ -12,7 +12,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 0px 1px 14px lightgray;
-    height: 80px;
+    height: 90px;
     margin-bottom: 50px;
 
 
@@ -121,6 +121,54 @@
     height: 100%;
 }
 
+
+        /* fixed button */
+
+.fixed-button{
+    color: white;
+    background-color:#535766;
+    width: 250px;
+    height: 45px;
+    padding: 10px 20px;
+    display: flex;
+    position: fixed;
+    right: -100px;
+    bottom: 200px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    
+
+}
+.fixed-button>p{
+ font-size: 22px;
+ font-weight: bold;
+ letter-spacing: 1px;
+}
+.fixed-button>i{
+    color: white;
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 4px;
+    transform: rotate(-270deg);
+}
+.fix-button{
+    position: fixed;
+    background-color: dodgerblue;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    text-align: center;
+    bottom: 10%;
+    right: 3%;
+    padding: 15px;
+}
+.fix-button>i{
+    font-size: 26px;
+    animation-duration: 2s;
+   
+}
 /* deal-head */
 
 .deal-head{
@@ -442,6 +490,96 @@ height: 100%;
 .myntra-app >i{
     color: #696e79;
 }
+
+
+/* ------------------ product css --------------- */
+
+#screen-product{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 100%;
+    margin: auto;
+    margin-top: -40px;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+   
+   
+    
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+  }
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #282c3f;
+    content: "/";
+   
+  }
+  ul.breadcrumb li a {
+    color: gray;
+    text-decoration: none;
+    font-weight:normal;
+   
+  }
+  ul.breadcrumb li {
+  font-weight:700;
+  }
+
+
+/* category info */
+
+.category-info{
+ display: flex;
+ margin-left: 16px;
+ font-size: 16px;
+}
+.category-name>p{
+    font-weight:700;
+}
+.item-count{
+margin-left: 6px;
+}
+
+/* filters */
+
+.filter{
+    display: flex;
+    border: 1px solid red;
+    padding: 20px;
+}
+.left{
+    border: 1px solid blue;
+    width: 25%;
+}
+.right{
+    border: 1px solid rgb(190, 35, 115);
+    width: 75%;
+}
+.left>h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid #696e79;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
