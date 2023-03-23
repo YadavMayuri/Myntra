@@ -745,6 +745,7 @@ margin-left: 6px;
     justify-content: space-between;
     font-size: 14px;
     padding: 6px 10px;
+    margin-right: 20px;
 }
 .filter-right>span>i{
     color: #696e79;
@@ -773,6 +774,7 @@ margin-left: 6px;
 .product-wrapper{
     /* border: 1px solid black; */
     padding: 0px 5px 20px 5px;
+    width: 21%;
 
 }
 .product-img{
@@ -788,24 +790,28 @@ margin-left: 6px;
 }
 .rating{
     width: 80px;
-    height: 28px;
+    height: 25px;
     z-index: 1;
     margin-top: -40px;
     margin-left: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+    /* border: 1px solid black; */
+    border-radius: 3px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     background:linear-gradient();
     position: relative;
     padding: 4px;
+    color: black;
+    text-align: center;
+    background:linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7));
+
    /*-------------------------------------------  */
     
 }
 .rating>p>i{
     margin-left: 2px;
     margin-right: 2px;
-    color: #72bfbc;
+    color: #29AB87;
 }
 
 .product-brand-name{
