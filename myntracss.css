@@ -13,7 +13,7 @@
     padding-bottom: 20px;
     box-shadow: 0px 1px 14px lightgray;
     height: 90px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   position: sticky;
   top: 0px;
   background-color: white;
@@ -915,6 +915,7 @@ margin-left: 6px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100%;
    
 }
 .right-inffo{
@@ -928,7 +929,7 @@ margin-left: 6px;
 .product-image{
     height: 430px;
     width: 49%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .product-image >img{
     height: 100%;
@@ -1257,21 +1258,96 @@ progress{
 background-color: violet;
 }
 
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 75%;
 
+}
+.img-gallery{
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
 
+}
+.img-gallery>img{
+    width: 100%;
+    height: 100%;
+}
 
+.customer-reviews{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
 
+.review-customer{
+    width: 5%;
+    height: 2%;
+    background-color: #03a685;
+    color: white;
+    font-size: 10px;
+    padding: 2px;
+}
+.review-customer>span>i{
+    font-size: 10px;
+    color: white;
+}
+.review-para{
+    width: 92%;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+.cname-likes{
+    margin-top: 14px;
 
+}
+.cname-likes{
+    font-size: 12px ;
+    letter-spacing: 0.4px;
+    display: flex;
+    justify-content: space-between;
+}
+.likes-dislike{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.cname-date{
+    width: 60%;
+}
+.product-all-detail>p:nth-child(1){
+    font-size: 12px ;
+    color: #ff3e6c;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin:10px 0px;
 
+    
+}
+.product-all-detail>p:nth-child(2)>span{
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    
+    letter-spacing: 0.4px;
 
+}
+.product-all-detail>p:nth-child(3)>span{
+    color: #ff3e6c;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    
+}
 
-
-
-
-
-
-
-
+.product-all-detail>p:nth-child(4){
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 
 
 
