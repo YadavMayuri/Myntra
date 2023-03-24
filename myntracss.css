@@ -1141,3 +1141,144 @@ font-weight: 700;
     margin-top: 14px;
     letter-spacing: 0.4px;
 }
+.product-info-head{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 14px;
+}
+.product-info-desc{
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.specification{
+    width: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.left-specs{
+    width: 45%;
+    /* border: 1px solid green; */
+    margin-top: 10px;
+}
+
+.specs-name{
+    font-size: 12px;
+    color: #696e79;
+}
+.specs-content{
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+.hr-line3{
+    color:#9fa8ab;
+    margin-top: 5px;
+}
+.specification>p{
+    font-size: 12px ;
+    color: #ff3e6c;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin:10px 0px;
+}
+.rating-count{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.left-count{
+    /* border: 1px solid green; */
+    width: 45%;
+}
+.left-count>h1{
+    font-weight: 400;
+    font-size: 34px;
+}
+.left-count>h1>span>i{
+    color:#03a685;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.left-count>p{
+    font-size: 12px ;
+    letter-spacing: 0.4px;
+}
+.right-count{
+    /* border: 1px solid green; */
+    width: 45%;
+    font-size: 12px;
+    color: #696e79;
+}
+.right-count>p>span>i{
+    margin: 2px;
+    color: #9fa8ab;
+    font-size: 8px;
+}
+
+progress{
+    background-color: #03a685;
+    height: 4px;
+    color: #9fa8ab;
+    margin: 0px 3px;
+    vertical-align: middle;
+}
+.c-rate{
+    margin-top: 14px;
+}
+.c-rating{
+    display:flex;
+
+    
+}
+.c-rating>p{
+    font-size: 12px;
+    font-weight: 700;;
+    margin-left: 5px;
+   
+    
+}
+.c-rating>span>progress{
+    vertical-align:middle;
+}
+
+.star-rating>p{
+    font-size: 12px ;
+    color: #ff3e6c;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin:10px 0px;
+}
+.right-count p:nth-child(3) >span progress{
+background-color: violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
