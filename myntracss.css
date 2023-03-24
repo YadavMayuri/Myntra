@@ -900,26 +900,244 @@ margin-left: 6px;
 }
 
 
+/* --------------------------------------------------------------------------- */
 
+.product-inffo{
+    display: flex;
+    /* border: 1px solid red; */
+    /* height: 150px; */
+    justify-content: space-evenly;
+}
 
+.left-images{
+    width: 54%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.right-inffo{
+    width: 40%;
+    /* border: 1px solid green; */
+    /* height: 150px; */
+    line-height: 1.6;
+    color: #282c3f;
 
+}
+.product-image{
+    height: 430px;
+    width: 49%;
+    margin-bottom: 10px;
+}
+.product-image >img{
+    height: 100%;
+    width: 100%;
+}
+.product-head>h2{
+    font-size: 20px;
+    font-weight: 700;
 
+}
+.product-head>h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #696e79;
+}
+.product-rating{
+    width: 160px;
+    border: 1px solid #696e79;
+    padding: 2px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+.product-rating>p{
+    font-weight: 600;
+}
+.product-rating>p>i{
+    color: #03a685;
+    font-size: 14px;
+}
+.product-rating>p>span{
+    color: #696e79;
+}
+.hr-line{
+    color: #696e79;
+    margin-top: 12px;
+}
+.price-product{
+    font-weight: 700;
+}
+.strikeprice{
+    color: #696e79;
+    margin-left: 6px;
+}
+.percentage-price{
+    font-weight: 700;
+    color: #ff905a;
+}
+.price-detail{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.strike-price{
+    text-decoration: line-through;
+}
+.i-text{
+    font-size: 12px;
+    font-weight: 700;
+    color: #03a685;
+}
+.size-chart{
+    width: 45%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 5px;
+}
+.size-chart>h2:nth-child(1){
+    font-size: 16px;
+}
+.size-chart>h2:nth-child(2){
+    font-size: 14px;
+    color: #ff3e6c;
+    margin-top: 2px;
+}
+.size-name{
+    border: 1PX solid #696e79;
+    border-radius: 50px;
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.size-info{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.product-buttons{
+    margin-top: 30px;
+}
+.add-btn{
+    width: 40%;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ff3e6c;
+    color: white;
+    background-color: #ff3e6c;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.add-btn>i{
+    margin-right: 8px;
+    font-size: 14px;
+}
+.wish-btn{
+    width: 30%;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #9fa8ab;
+    /* color: white; */
+    background-color: white;
+    font-weight: 700;
+}
+.wish-btn>i{
+    margin-right: 8px;
+    font-size: 14px;
 
+}
+.h-line{
+    color: #9fa8ab;
+    margin-top: 20px;
+}
+.product-title-name{
+    display: flex;
+    margin-top: 20px;
 
+}
+.product-title-name>h1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.product-title-name>span>i{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.enter-pin{
+    border: 1px solid #9fa8ab;
+    width:48%;
+    margin-top: 16px;
+    padding: 6px;
 
+}
+.enter-pin>input{
+    outline: none;
+    border: none;
 
+}
+.enter-pin>label{
+    font-size: 12px;
+    margin-left: 12px;
+    color: #ff3e6c;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.enter-pin-txt{
+    font-size: 12px;
+    margin-top: 6px;
+}
+.product-policy{
+    font-size: 14px;
+    margin-top: 14px;
+    letter-spacing: 0.4px;
+}
+.best-price-info{
+    margin-top: 10px;
+}
+.best-price{
+    display: flex;
+    margin-top: 10px;
+}
+.best-price >h4:nth-child(1){
+font-weight: 700;
+}
+.best-price >h4:nth-child(2){
+    font-weight: 700;
+    color: #ff905a;
+    margin-left: 5px;
+}
+.best-price-info >ul{
+    margin-left: 16px;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    letter-spacing: 0.4px;
+}
 
+.best-price-info>p{
+    font-size: 12px ;
+    color: #ff3e6c;
+    font-weight: 700;
+    letter-spacing: 0.4px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.hr-line2{
+    color: #696e79;
+    margin: 30px 0px;
+}
+.product-decs-content{
+    font-size: 14px;
+    margin-top: 14px;
+    letter-spacing: 0.4px;
+}
