@@ -504,6 +504,9 @@ height: 100%;
     margin-top: -40px;
     color: #282c3f;
 }
+.product-pages{
+    margin: 10px 0px;
+}
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -946,9 +949,9 @@ margin-left: 6px;
     color: #696e79;
 }
 .product-rating{
-    width: 160px;
+    width: 144px;
     border: 1px solid #696e79;
-    padding: 2px;
+    padding: 4px;
     margin-top: 12px;
     font-size: 14px;
 }
@@ -976,6 +979,7 @@ margin-left: 6px;
 .percentage-price{
     font-weight: 700;
     color: #ff905a;
+    margin-left: 5px;
 }
 .price-detail{
     margin-top: 10px;
@@ -1110,6 +1114,9 @@ margin-left: 6px;
     display: flex;
     margin-top: 10px;
 }
+.best-price-info>ul>li:nth-child(2)>span{
+    font-weight: bold;
+}
 .best-price >h4:nth-child(1){
 font-weight: 700;
 }
@@ -1193,7 +1200,7 @@ font-weight: 700;
     /* border: 1px solid red; */
 }
 .left-count{
-    /* border: 1px solid green; */
+    border-right: 1px solid #9fa8ab;
     width: 45%;
 }
 .left-count>h1{
