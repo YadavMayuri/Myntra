@@ -1442,7 +1442,7 @@ background-color: violet;
 
 .c-container{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 70%;
     height: 100%;
     margin: auto;
@@ -1450,8 +1450,8 @@ background-color: violet;
 }
 .c-left-content{
     width: 63%;
-    border: 1px solid blue;
-    height: 500px;
+    /* border: 1px solid blue; */
+    height: 100%;
     margin-top: 14px;
     font-size: 12px;
     color: black;
@@ -1459,8 +1459,8 @@ background-color: violet;
 }
 .c-right-content{
     width: 35%;
-    border: 1px solid blue;
-    height: 500px;
+    border-left: 1px solid #9fa8ab;
+    /* height: 500px; */
 }
 
 .check-time{
@@ -1620,10 +1620,11 @@ background-color: violet;
     justify-content: space-between;
     padding: 10px;
     margin-top: 10px;
+    border-radius: 5px;
 }
 .s-p-img{
     width: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .s-p-img>img{
  width: 100%;
@@ -1632,12 +1633,12 @@ background-color: violet;
 
 .s-p-content{
     width: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 .close-button{
     width: 5%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
    
 }
@@ -1690,45 +1691,198 @@ background-color: violet;
     font-weight: 600;
     outline: none;
 }
-
+.c-price-info{
+    margin-top: 5px;
+}
 .c-price{
     font-weight: 700;
 }
 
 .c-strike-price{
     color:#696e79 ;
-    
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.c-percentage{
+    color: #f16565;
+    margin-left: 5px;
+
 }
 
+.c-return-policy{
+    display: flex;
+    margin-top: 5px;
+}
+.c-return-policy>span>i{
+    font-size: 14px;
+   
+}
+.c-return-policy>p{
+    margin-left: 5px;
+}
+.c-return-policy>p>span{
+    font-weight: 700;
+}
 
+.ex-bag{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #9fa8ab;
+}
+.bag-img{
+    width: 15%;
+    height: 44px;
+    /* border: 1px solid red; */
+}
+.bag-img>img{
+    width: 100%;
+    height: 40px;
+}
+.w-content{
+    width: 68%;
+    /* border: 1px solid red; */
+    font-weight: 700;
 
+}
+.c-login-now{
+    width: 15%;
+    color: #FF3F6C;
+    font-size: 12px;
+    font-weight: 700;
+}
 
+/* right side css  */
 
+.c-right-content{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
 
+.c-coupons{
+    padding: 10px;
 
+}
+.c-heading{
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+}
+.coupons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.coupons>span>i{
+    font-size: 16px;
+    width: 5%;
+}
+.coupons>p{
+    width: 78%;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.coupons>button{
+    background-color: white;
+    padding: 5px 10px;
+    color: #FF3F6C;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid #FF3F6C;
+    font-size: 12px;
 
+}
 
+.c-l-login{
+    margin-top: 10px;
+    text-align: center;
+    
 
+}
+.c-l-login>p>span{
+    color: #FF3F6C;
+    font-weight: 700;
+}
+.c-hr-line{
+    color: #9fa8ab;
+    margin-top: 10px;
+}
 
+.gift-p{
+    margin-top: 14px;
+    padding: 10px;
 
+}
+.gift-personalization{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff1ec;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.gift-img{
+    width: 10%;
+    /* border: 1px solid red; */
 
+}
+.gift-img>img{
+    width: 100%;
+    height: 100%;
+}
+.c-gift{
+    width: 85%;
+    /* border: 1px solid red; */
+    padding: 10px;
 
+}
+.c-gift>p{
+    font-weight: 700;
+}
+.c-gift>button{
+    color: #FF3F6C;
+    font-weight: 700;
+    font-size: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+.c-gift-para{
+    margin-top: 5px;
+}
+.c-price-detail{
+    padding: 10px;
+    margin-top: 14px;
+}
+.c-total-price{
+    margin-top: 10px;
+    line-height: 1.6;
+    padding:8px 0px;
+    margin-bottom: 8px;
+}
+.c-price-summery{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.place-order-btn>button{
+ color: white;
+ background-color: #FF3F6C;
+ border: none;
+ outline: none;
+ width: 100%;
+ font-size: 12px;
+ font-weight: 700;
+ letter-spacing: 0.4px;
+ padding: 10px;
+ border-radius: 5px;
+ text-transform: uppercase;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
