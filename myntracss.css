@@ -1368,9 +1368,10 @@ background-color: violet;
     border-bottom: 1px solid #9fa8ab;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     color: #696B79;
+    text-align: center;
 }
 
 .c-logo{
@@ -1385,8 +1386,9 @@ background-color: violet;
 }
 
 .checkout-step{
-    width: 25%;
+    width: 80%;
     /* border: 1px solid black; */
+    
 }
 .step{
     margin-left: 4px;
@@ -1441,9 +1443,17 @@ background-color: violet;
 }
 
 .c-container{
+    
+    border: 1px solid blue;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    
+}
+.c-top-content{
     display: flex;
     /* border: 1px solid red; */
-    width: 70%;
+    width: 100%;
     height: 100%;
     margin: auto;
     justify-content: space-between;
@@ -1886,3 +1896,111 @@ background-color: violet;
  text-transform: uppercase;
 
 }
+.c-discount-amt{
+    color: #03a685;
+}
+
+.c-apply-coupon{
+    color: #FF3F6C;
+}
+.c-know-more{
+    color: #FF3F6C;
+font-weight: 700;
+}
+
+.c-total-amt{
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* bottom content css */
+
+.c-bottom-content{
+    background-color: #fff5f7;
+    margin-top: 24px;
+    color: #282c3f;
+    padding: 10px;
+    font-size: 12px;
+}
+.c-b-content-head{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+
+}
+
+.similar-products{
+    display: flex;
+    margin-top: 20px;
+    /* border: 1PX solid green; */
+    height: 100%;
+    justify-content:left;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.c-similar-product{
+    /* border: 1PX solid black; */
+    width: 18%;
+    height: 100%;
+    
+}
+.c-s-img{
+    width:100% ;
+    height: 200px;
+}
+.c-s-img>img{
+    width: 100%;
+    height: 100%;
+}
+.c-sp-brand-name{
+    font-weight: 700;
+    margin-top: 5px;
+}
+.c-sp-desc{
+    font-size: 11px;
+    color: #696e79;
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+.c-sp-price-info{
+    font-weight: 700;
+
+
+}
+.c-sp-strike-price{
+    color: #696e79;
+    text-decoration: line-through;
+
+
+}
+.c-sp-discount{
+    font-size: 9px;
+    color: #FF3F6C;
+    
+}
+.c-sp-add-bag{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px ;
+    text-transform: uppercase;
+    color: #ff3f6c;
+    font-weight: 700;
+}
+.c-sp-info{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #9fa8ab;
+}
+
+
+
+
+
+
+
+
+
+
