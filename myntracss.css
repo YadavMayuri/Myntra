@@ -1366,9 +1366,9 @@ background-color: violet;
     width: 100%;
     height: 70px;
     border-bottom: 1px solid #9fa8ab;
-    margin: auto;
-    display: flex;
     justify-content:center;
+    
+    display: flex;
     align-items: center;
     color: #696B79;
     text-align: center;
@@ -1388,6 +1388,7 @@ background-color: violet;
 .checkout-step{
     width: 80%;
     /* border: 1px solid black; */
+
     
 }
 .step{
@@ -1402,6 +1403,8 @@ background-color: violet;
     letter-spacing: 1.4px;
     font-weight: 500;
     text-transform: uppercase;
+    justify-content:center;
+
 }
 .active{
     color: #03a685;
@@ -1444,7 +1447,7 @@ background-color: violet;
 
 .c-container{
     
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 70%;
     height: 100%;
     margin: auto;
@@ -1500,10 +1503,12 @@ background-color: violet;
     border-radius: 2px;
     padding: 6px 16px;
 }
+
 .c-av-offers{
     border: 1px solid #9fa8ab;
     padding: 6px;
     margin-top: 10px;
+    border-radius: 5px;
 
 }
 .c-head{
@@ -1554,6 +1559,7 @@ background-color: violet;
     padding: 8px;
     border: 1px solid #9fa8ab;
     margin-top: 10px;
+    border-radius: 5px;
 }
 .c-login>i{
     width: 5%;
@@ -1921,6 +1927,8 @@ font-weight: 700;
     color: #282c3f;
     padding: 10px;
     font-size: 12px;
+    height: 100%;
+    margin-bottom: 50px;
 }
 .c-b-content-head{
     font-size: 14px;
@@ -1995,11 +2003,34 @@ font-weight: 700;
     border: 1px solid #9fa8ab;
 }
 
+.c-payment-options{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.c-payment-opt{
+    width: 60px;
+    height: 37px;
+}
+.c-payment-opt>img{
+    width: 100%;
+    height: 100%;
+}
+.c-card-opt{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.c-contact-us{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #282c3f;
+    text-decoration: none;
+    
 
-
-
-
-
+}
 
 
 
