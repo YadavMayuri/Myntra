@@ -2003,6 +2003,8 @@ font-weight: 700;
     border: 1px solid #9fa8ab;
 }
 
+/* payment options */
+
 .c-payment-options{
     display: flex;
     justify-content: space-between;
