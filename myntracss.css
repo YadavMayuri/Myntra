@@ -778,6 +778,8 @@ margin-left: 6px;
     /* border: 1px solid black; */
     padding: 0px 5px 20px 5px;
     width: 21%;
+    color: black;
+    text-decoration: none;
 
 }
 .product-img{
