@@ -19,9 +19,9 @@
     <div id="navbar">
 
         <!-- Logo -->
-        <div class="logo">
+        <a href="./index.html" class="logo">
             <img src="/images/myntra-logo.png" alt="">
-        </div>
+        </a>
 
         <!-- navbar-links -->
         <div class="nav-link">
@@ -55,17 +55,20 @@
 
         <!-- navbar-icons -->
         <div class="main-icons">
-            <div class="icons">
+            <a href="./register.html" class="icons">
                 <i class="fa-regular fa-user"></i>
                 <p>profile</p>
-            </div>
+            </a>
             <div class="icons">
                 <i class="fa-regular fa-heart"></i>
                 <p> wishlist</p>
             </div>
-            <div class="icons">
+            <a href="./cart.html" class="icons">
                 <i class="fa-solid fa-bag-shopping"></i>
                 <p>bag</p>
+            </a>
+            <div class="icons" id="logout">
+
             </div>
         </div>
 
@@ -137,7 +140,7 @@
                 <div class="size-name">XXL</div>
             </div>
             <div class="product-buttons">
-                <button class="add-btn"><i class="fa-solid fa-bag-shopping"></i> ADD TO BAG</button>
+                <button class="add-btn" onclick="window.location.href='./cart.html'"><i class="fa-solid fa-bag-shopping"></i> ADD TO BAG</button>
                 <button class="wish-btn"> <i class="fa-regular fa-heart"></i>WISHLIST</button>
             </div>
 
@@ -475,7 +478,41 @@
         </div>
 
         
-
+        <script>
+            window.onload = function () {
+                // alert("working")
+    
+                var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+                // console.log(currentUser,"current user");
+                if (!!currentUser) {
+                    // alert(currenUser,"username")
+                    var logoutDiv = document.getElementById("logout")
+                    var divfromHtml = document.getElementById("switch");
+                    // console.log(divfromHtml, "divfromhtml");
+                    // var h1=document.createElement("h1");
+                    // h1.innerText="Mayuri"
+                    // divfromHtml.append(h1)
+    
+                    var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
+                    var name = `<div>${currentUser.userName}</div>`;
+                    divfromHtml.innerHTML = name;
+                    logoutDiv.innerHTML = button;
+                    // logoutDiv.innerHTML = icon
+                }
+                // else {
+                //     alert("current user absent")
+                // }
+    
+    
+            }
+            function logout() {
+                alert("Logout successful.")
+                localStorage.removeItem("myntraCurrentUser")
+                window.location.reload()
+    
+    
+            }
+        </script>
 </body>
 
 </html>

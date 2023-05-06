@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="shortcut icon" href="/images/myntra-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="myntracss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /></head>
+<body>
+    
+
+    <h1>Seller Page</h1>
+    <form onsubmit="addProduct(event)">
+        <label>Product Name</label><br />
+        <input type="text" id="pname" /><br />
+        <label>Product Price</label><br />
+        <input type="number" id="pprice" /><br />
+        <label>Product Image url</label><br />
+        <input type="text" id="pimage" /><br />
+        <input type="submit" /><br />
+    </form>
+    <script>
+        function addProduct(event) {
+            event.preventDefault();
+            // alert("Product adding....")
+            var proName = document.getElementById("pname").value;
+            var proPrice = document.getElementById("pprice").value;
+            var proImage = document.getElementById("pimage").value;
+            var product = { proName, proPrice, proImage };
+
+            var LS = JSON.parse(localStorage.getItem("myntra-Products")) || [];
+            LS.push(product);
+            localStorage.setItem("myntra-Products", JSON.stringify(LS));
+
+            alert("Product Added Successfully.")
+        }
+    </script>
+</body>
+</html>

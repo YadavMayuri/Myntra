@@ -12,19 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <div id="navbar">
 
         <!-- Logo -->
-        <div class="logo">
+        <a href="./index.html" class="logo">
             <img src="/images/myntra-logo.png" alt="">
-        </div>
+        </a>
 
         <!-- navbar-links -->
         <div class="nav-link">
@@ -58,10 +55,10 @@
 
         <!-- navbar-icons -->
         <div class="main-icons">
-            <div class="icons">
+            <a href="./register.html" class="icons">
                 <i class="fa-regular fa-user"></i>
-                <p>profile</p>
-            </div>
+                <p id="switch">profile</p>
+            </a>
             <div class="icons">
                 <i class="fa-regular fa-heart"></i>
                 <p> wishlist</p>
@@ -70,6 +67,9 @@
                 <i class="fa-solid fa-bag-shopping"></i>
                 <p>bag</p>
             </a>
+            <div class="icons" id="logout">
+
+            </div>
         </div>
 
     </div>
@@ -86,8 +86,8 @@
 
         <!-- Fixed buttons -->
         <div class="fixed-button">
-           <P> FLAT ₹200 OFF</P>
-           <i class="fa-solid fa-caret-left" ></i>
+            <P> FLAT ₹200 OFF</P>
+            <i class="fa-solid fa-caret-left"></i>
         </div>
         <div class="fix-button">
             <i class="fa-regular fa-bell animate__animated animate__swing  animate__repeat-3"></i>
@@ -241,7 +241,7 @@
                 <img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/2f410d81-7fae-400e-9ecc-b4a8b6df72b91645602543430-Women-Jeans.jpg"
                     alt="">
             </div>
-            <a href="./product.html" class="pic">
+            <a href="./multiple-products-page.html" class="pic">
                 <img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/82a9be01-3032-4725-9500-bcc94366b7931645602543399-Mens-Shirts.jpg"
                     alt="">
             </a>
@@ -644,36 +644,28 @@
                     alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l1.webp"
-                    alt="">
+                <img src="/images/l1.webp" alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l2.webp"
-                    alt="">
+                <img src="/images/l2.webp" alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l3.webp"
-                    alt="">
+                <img src="/images/l3.webp" alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l4.webp"
-                    alt="">
+                <img src="/images/l4.webp" alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l5.webp"
-                    alt="">
+                <img src="/images/l5.webp" alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l6.webp"
-                    alt="">
+                <img src="/images/l6.webp" alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l7.webp"
-                    alt="">
+                <img src="/images/l7.webp" alt="">
             </div>
             <div class="m-luxe">
-                <img src="/images/l8.webp"
-                    alt="">
+                <img src="/images/l8.webp" alt="">
             </div>
 
         </div>
@@ -685,26 +677,22 @@
 
         <div class="gift-cards">
             <div class="g-cards">
-                <img src="/images/g1.jpg"
-                    alt="">
+                <img src="/images/g1.jpg" alt="">
             </div>
 
 
             <div class="g-cards">
-                <img src="/images/g2.webp"
-                    alt="">
+                <img src="/images/g2.webp" alt="">
             </div>
 
 
             <div class="g-cards">
-                <img src="/images/g3.webp"
-                    alt="">
+                <img src="/images/g3.webp" alt="">
             </div>
 
 
             <div class="g-cards">
-                <img src="/images/g4.webp"
-                    alt="">
+                <img src="/images/g4.webp" alt="">
             </div>
 
 
@@ -741,13 +729,13 @@
         <!-- footer -->
 
         <div class="footer">
-            <div class="main-footer" >
-                
+            <div class="main-footer">
+
                 <div class="online-shopping-links">
                     <h5>ONLINE SHOPPING</h5>
                     <P>Men</P>
                     <P>Women</P>
-                    <P>Kids</P> 
+                    <P>Kids</P>
                     <P>Home &Living</P>
                     <P>Beauty</P>
                     <P>Gift Cards</P>
@@ -783,7 +771,7 @@
                         <div class="img-app">
                             <img src="/images/appstoreimg.png" alt="">
                         </div>
-                        
+
                     </div>
                     <h5>KEEEP IN TOUCH</h5>
                     <i class="fa-brands fa-square-facebook"></i>
@@ -793,11 +781,13 @@
                 </div>
                 <div class="policy">
                     <div class="policies">
-                        <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="">
+                        <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                            alt="">
                         <p><b> 100% ORIGINAL</b> guarantee for all products at myntra.com</p>
                     </div>
                     <div class="policies">
-                        <img src=https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png alt="">
+                        <img src=https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png
+                            alt="">
                         <p><b> Return within 30days</b> of receiving your order</p>
                     </div>
                 </div>
@@ -805,6 +795,43 @@
         </div>
 
     </div>
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
+                var name = `<div>${currentUser.userName}</div>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
+            }
+            // else {
+            //     alert("current user absent")
+            // }
+
+
+        }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("myntraCurrentUser")
+            window.location.reload()
+
+
+        }
+
+    </script>
 </body>
 
 </html>

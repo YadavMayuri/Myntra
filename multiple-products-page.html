@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="shortcut icon" href="/images/myntra-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="myntracss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        #products {
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* padding: 1rem; */
+        }
+
+        #products>a {
+            width: 23%;
+            border: 1px solid lightgray;
+            /* text-align: center; */
+            margin-bottom: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        #products>a>div>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .mpp-pro-name {
+            margin: 5px 12px 0 12px;
+            font-size: 14px;
+        }
+
+        .mpp-pro-price {
+            margin: 5px 10px;
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+
+        <!-- Logo -->
+        <a href="./index.html" class="logo">
+            <img src="/images/myntra-logo.png" alt="">
+        </a>
+
+        <!-- navbar-links -->
+        <div class="nav-link">
+
+            <div>
+                <h1>men</h1>
+            </div>
+            <div>
+                <h1>women</h1>
+            </div>
+            <div>
+                <h1>kids</h1>
+            </div>
+            <div>
+                <h1>home & living</h1>
+            </div>
+            <div>
+                <h1>beauty</h1>
+            </div>
+            <div>
+                <h1>studio <sup>new</sup></h1>
+            </div>
+        </div>
+
+        <!-- searchbar -->
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+
+        <!-- navbar-icons -->
+        <div class="main-icons">
+            <a href="./register.html" class="icons">
+                <i class="fa-regular fa-user"></i>
+                <p id="switch">profile</p>
+            </a>
+            <div class="icons">
+                <i class="fa-regular fa-heart"></i>
+                <p> wishlist</p>
+            </div>
+            <a href="./cart.html" class="icons">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>bag</p>
+            </a>
+            <div class="icons" id="logout">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- <div id="products"></div> -->
+
+    <div id="screen-product">
+
+        <div class="product-pages">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li>Men T-Shirts</li>
+
+            </ul>
+        </div>
+        <div class="category-info">
+            <div class="category-name">
+                <p>Men T-Shirts </p>
+
+            </div>
+            <div class="item-count">
+                <p> - 81165 items</p>
+
+            </div>
+        </div>
+
+        <!-- Fixed buttons -->
+        <div class="fixed-button">
+            <P> FLAT ₹200 OFF</P>
+            <i class="fa-solid fa-caret-left"></i>
+        </div>
+        <div class="fix-button">
+            <i class="fa-regular fa-bell animate__animated animate__swing  animate__repeat-3"></i>
+        </div>
+
+
+
+        <!-- filters/ -->
+
+        <div class="filter">
+            <div class="left">
+                <h3>Filters</h3>
+                <!-- categories -->
+                <div class="categories">
+                    <h4 class="title"> categories </h4>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Tshirts</p>
+                        <p class="count">(84801)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Lounge Tshirts</p>
+                        <p class="count">(800)</p>
+                    </div>
+
+                </div>
+
+                <!-- for brand -->
+                <div class="categories">
+                    <div class="c-search">
+                        <h4 class="title"> brand </h4>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Roadster</p>
+                        <p class="count">(3810)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">U.S.Polo Assn.</p>
+                        <p class="count">(1568)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Friskers</p>
+                        <p class="count">(1482)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Tommy Hilfiger</p>
+                        <p class="count">(1410)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">HRX by Hritik Roshan</p>
+                        <p class="count">(1410)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Max</p>
+                        <p class="count">(1482)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Jack & Jones</p>
+                        <p class="count">(1482)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">WROGN</p>
+                        <p class="count">(1229)</p>
+                    </div>
+                    <div class="plus">
+                        <p>+600 more</p>
+                    </div>
+
+                </div>
+
+                <!-- for price -->
+                <div class="categories">
+                    <h4 class="title"> price</h4>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Rs.149 to Rs.3812</p>
+                        <p class="count">(84814)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Rs.3812 to Rs.7475</p>
+                        <p class="count">(745)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Rs.7475 to Rs.11138</p>
+                        <p class="count">(40)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <p class="c-name">Rs.11138 to Rs.14801</p>
+                        <p class="count">(1)</p>
+                    </div>
+
+                </div>
+
+                <!-- for colors -->
+                <div class="categories">
+                    <div class="c-search">
+                        <h4 class="title"> color </h4>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <span class="color black"></span>
+                        <p class="c-name">Black</p>
+                        <p class="count">(12163)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <span class="color blue"></span>
+                        <p class="c-name">Blue</p>
+                        <p class="count">(11068)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <span class="color white"></span>
+                        <p class="c-name">White</p>
+                        <p class="count">(10299)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <span class="color nevyblue"></span>
+                        <p class="c-name">Nevy Blue</p>
+                        <p class="count">(8365)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <span class="color green"></span>
+                        <p class="c-name">Green</p>
+                        <p class="count">(5545)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <span class="color red"></span>
+                        <p class="c-name">Red</p>
+                        <p class="count">(4772)</p>
+                    </div>
+                    <div class="category-wrapper">
+                        <input type="checkbox">
+                        <span class="color gray"></span>
+                        <p class="c-name">Gray</p>
+                        <p class="count">(4754)</p>
+                    </div>
+
+                </div>
+
+                <!-- for discount range -->
+                <div class="categories">
+                    <div class="discount">
+                        <h4 class="title"> discount range</h4>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">10% and above</p>
+                        </div>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">20% and above</p>
+                        </div>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">30% and above</p>
+                        </div>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">40% and above</p>
+                        </div>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">50% and above</p>
+                        </div>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">60% and above</p>
+                        </div>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">70% and above</p>
+                        </div>
+                        <div class="discount-wrapper">
+                            <input type="radio" name="discount-range">
+                            <p class="d-range">80% and above</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- delivery time -->
+                <div class="categories">
+                    <h4 class="title"> delivery time</h4>
+                    <div class="update-d-pincode">
+                        Update delivery pincode here
+                    </div>
+                    <ul class="d-pincode-list">
+                        <li>
+                            <input type="radio" name="d-time">
+                            <label for="">By Tomorrow</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="d-time">
+                            <label for="">Within 2 Days</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="d-time">
+                            <label for="">Within 3 Days</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="d-time">
+                            <label for="">Within 4 Days</label>
+                        </li>
+                    </ul>
+                    <div class="d-content">
+                        <p> Estimated fastest delivery time. Refer to actual delivery time in Bag.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="right">
+                <div class="right-filter">
+                    <div class="filter-left">
+                        <ul class="filter-list">
+                            <li class="list-item">
+                                <p>Bundles</p>
+                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                            </li>
+                            <li class="list-item">
+                                <p>Country of Origin</p>
+                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                            </li>
+                            <li class="list-item">
+                                <p>Size</p>
+                                <span><i class="fa-solid fa-chevron-down"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-right">
+                        <div class="sort">
+                            <p>Sort by : <span>Recommended</span> </p>
+                        </div>
+                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+
+                </div>
+
+                <!-- products info  -->
+
+                <div class="products-group">
+ 
+                    <div id="products"></div>
+
+                 
+
+                </div>
+
+                <!-- pegination -->
+                <div class="pegination-content">
+                    <div class="pegination">
+                        <div class="pegination-start">
+                            <p>Page 1 of 1710</p>
+                        </div>
+                        <div class="pegination-main">
+                            <ul>
+                                <li class="active-li">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                            </ul>
+                        </div>
+                        <div class="pegination-end">
+                            Next
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        window.onload = function () {
+            // alert("working")
+
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
+                var name = `<div>${currentUser.userName}</div>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
+            }
+            // else {
+            //     alert("current user absent")
+            // }
+
+            var divToShowProducts = document.getElementById("products");
+            var finalData = "";
+
+            var productsFromLS = JSON.parse(localStorage.getItem("myntra-Products"))
+            for (var i = 0; i < productsFromLS.length; i++) {
+                finalData += `<a href="./single-product.html"><div id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹ ${productsFromLS[i].proPrice}</p></div></a>`;
+            }
+
+            // console.log(finalData, "finalData here")
+
+            divToShowProducts.innerHTML = finalData;
+
+        }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("myntraCurrentUser")
+            window.location.reload()
+
+
+        }
+    </script>
+</body>
+
+</html>
