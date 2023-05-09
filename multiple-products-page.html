@@ -24,7 +24,7 @@
             /* padding: 1rem; */
         }
 
-        #products>a {
+        #products>div {
             width: 23%;
             border: 1px solid lightgray;
             /* text-align: center; */
@@ -33,7 +33,7 @@
             text-decoration: none;
         }
 
-        #products>a>div>img {
+        #products>div>img {
             width: 100%;
             /* height: 100%; */
         }
@@ -448,7 +448,7 @@
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
 
-                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
+                var button =  '<span  class="icons"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
                 var name = `<div>${currentUser.userName}</div>`;
                 divfromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;
@@ -461,16 +461,44 @@
             var divToShowProducts = document.getElementById("products");
             var finalData = "";
 
+            // var divToAppendProductImage = document.getElementById("product-img")
+            // var divToAppendProductName = document.getElementById("for-product-name");
+            // var divToAppendProductPrice = document.getElementById("for-product-price");
+            // var divToAppendAllProducts = document.getElementById("finalMyntraproducts")
+
+            // var finalImage = ""
+            // var finalName = ""
+            // var finalPrice = ""
+            // var finalMyntraMultiplePro = ""
+
+
             var productsFromLS = JSON.parse(localStorage.getItem("myntra-Products"))
+
             for (var i = 0; i < productsFromLS.length; i++) {
-                finalData += `<a href="./single-product.html"><div id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹ ${productsFromLS[i].proPrice}</p></div></a>`;
+                finalData += `<div onclick='redirect(${JSON.stringify(productsFromLS[i])})' id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹ ${productsFromLS[i].proPrice}</p></div>`;
+
+                // finalMyntraMultiplePro += ``
             }
 
             // console.log(finalData, "finalData here")
 
+            // divToAppendProductImage.innerHTML = finalImage;
+            // divToAppendProductName.innerHTML = finalName;
+            // divToAppendProductPrice.innerHTML = finalPrice;
+            // divToAppendAllProducts.innerHTML = finalMyntraMultiplePro;
             divToShowProducts.innerHTML = finalData;
 
+
         }
+        
+        function redirect(product) {
+            var singleProduct = JSON.stringify(product);
+            // console.log(s, " s here")
+            // alert("Working")
+            localStorage.setItem("Myntra-current-product", singleProduct);
+            window.location.href = './singleProduct.html'
+        }
+
         function logout() {
             alert("Logout successful.")
             localStorage.removeItem("myntraCurrentUser")

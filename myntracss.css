@@ -1049,6 +1049,28 @@ margin-left: 6px;
     margin-right: 8px;
     font-size: 14px;
 }
+.add-btn-cart-btn{
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ff3e6c;
+    color: white;
+    background-color: #ff3e6c;
+    font-weight: 700;
+}
+.logout-button-txt{
+    margin-top: .4rem;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #282c3f;
+
+}
 .wish-btn{
     width: 30%;
     height: 45px;
@@ -2035,6 +2057,86 @@ font-weight: 700;
     text-decoration: none;
     
 
+}
+
+
+/* success page */
+#success-screen .c-navbar{
+    background-color: white;
+}
+.s-c-container{
+    background-color: rgb(234, 234, 234);
+}
+.success-content-wrap{
+    /* border: 1px solid gray; */
+    width: 60%;
+    margin: 70px auto;
+    padding: 30px 0 40px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+
+}
+.order-p-txt{
+    color: #03a685;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-icon{
+    margin-right: 10px;
+    border: 3px solid #03a685;
+    border-radius: 100%;
+    font-size: 16px;
+    padding: 3px;
+    font-weight: bold;
+}
+.order-s-txt{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.order-p-mode-txt{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+
+}
+.order-c-email-txt{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+.order-s-add-txt{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+.order-s-add-txt span{
+    font-weight: 700;
+}
+.continue-s-btn{
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: #ff3f6c;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 

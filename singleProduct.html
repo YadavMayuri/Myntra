@@ -12,6 +12,24 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        #singleProduct {
+            width: 100%;
+        }
+
+        #singlePro {
+            /* border: 1px solid black; */
+            width: 100%;
+            /* height: 600px; */
+            margin: auto;
+            text-align: center;
+        }
+
+        #singlePro>img {
+            width: 100%;
+            /* height: 350px; */
+        }
+    </style>
 </head>
 
 <body>
@@ -57,7 +75,7 @@
         <div class="main-icons">
             <a href="./register.html" class="icons">
                 <i class="fa-regular fa-user"></i>
-                <p>profile</p>
+                <p id="switch">profile</p>
             </a>
             <div class="icons">
                 <i class="fa-regular fa-heart"></i>
@@ -82,16 +100,18 @@
             <li><a href="#">Men Clothing</a></li>
             <li><a href="#">Tshirts</a></li>
 
-            <li>Minions By kook n Keech Tshirts > More By Minions By Kook N Keech</li>
+            <!-- <li>Minions By kook n Keech Tshirts > More By Minions By Kook N Keech</li> -->
 
         </ul>
     </div>
     <div class="product-inffo">
         <div class="left-images">
-            <div class="product-image"><img
-                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/736b9f2c-3a49-41a9-828c-1e0218b62e431559550212164-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-1.jpg"
-                    alt=""></div>
-            <div class="product-image"><img
+            <div class="product-image" >
+                <div id="singleProduct"> </div>
+                <!-- <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/736b9f2c-3a49-41a9-828c-1e0218b62e431559550212164-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-1.jpg"
+                    alt=""> -->
+            </div>
+            <!-- <div class="product-image"><img
                     src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/a21db48e-5fa4-4bd6-8a52-203745f247611559550212145-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-2.jpg"
                     alt=""></div>
             <div class="product-image"><img
@@ -102,7 +122,7 @@
                     alt=""></div>
             <div class="product-image"><img
                     src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/361af51e-4174-419c-aebc-3bb80120d8f31559550212090-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-5.jpg"
-                    alt=""></div>
+                    alt=""></div> -->
         </div>
 
         <div class="fix-button">
@@ -111,8 +131,8 @@
         <div class="right-inffo">
 
             <div class="product-head">
-                <h2>Minions by Kook N Keech</h2>
-                <h4>Men Purple Boxy Fit Printed Round Neck Pure Cotton T-shirt</h4>
+                <h2 id="for-product-name"> </h2>
+                <h4>Men Boxy Fit Printed Round Neck Pure Cotton Shirt</h4>
                 <div class="product-rating">
                     <p>4.2 <i class="fa-solid fa-star"></i> <span> | 2.8k Ratings</span></p>
                 </div>
@@ -120,7 +140,7 @@
 
             </div>
             <div class="price-detail">
-                <span class="price-product">₹571</span>
+                <span class="price-product" id="for-product-price">₹</span>
                 <span class="strikeprice"> MRP <span class="strike-price"> ₹1099</span></span>
                 <span class="percentage-price">(48% OFF)</span>
                 <p class="i-text">inclusive of all taxes</p>
@@ -140,7 +160,7 @@
                 <div class="size-name">XXL</div>
             </div>
             <div class="product-buttons">
-                <button class="add-btn" ><i class="fa-solid fa-bag-shopping"></i> ADD TO BAG</button>
+                <button class="add-btn" id="for-add-to-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
                 <button class="wish-btn"> <i class="fa-regular fa-heart"></i>WISHLIST</button>
             </div>
 
@@ -273,7 +293,7 @@
                         </div>
                         <p>See More</p>
 
-                        
+
                     </div>
                     <hr class="hr-line3">
 
@@ -287,14 +307,19 @@
                     <div class="rating-count">
                         <div class="left-count">
                             <h1>4.2 <span><i class="fa-solid fa-star"></i></span></h1>
-                            <p>2.8k Verified Buyers</p> 
+                            <p>2.8k Verified Buyers</p>
                         </div>
                         <div class="right-count">
-                            <p>5 <span><i class="fa-solid fa-star"></i></span><progress value="65" max="100"></progress>1653</p>
-                            <p>4 <span><i class="fa-solid fa-star"></i></span><progress value="40" max="100"></progress>527</p>
-                            <p>3 <span><i class="fa-solid fa-star"></i></span><progress value="30" max="100"></progress>234</p>
-                            <p>2 <span><i class="fa-solid fa-star"></i></span><progress value="20" max="100"></progress>246</p>
-                            <p>1 <span><i class="fa-solid fa-star"></i></span><progress value="25" max="100"></progress>134</p>
+                            <p>5 <span><i class="fa-solid fa-star"></i></span><progress value="65"
+                                    max="100"></progress>1653</p>
+                            <p>4 <span><i class="fa-solid fa-star"></i></span><progress value="40"
+                                    max="100"></progress>527</p>
+                            <p>3 <span><i class="fa-solid fa-star"></i></span><progress value="30"
+                                    max="100"></progress>234</p>
+                            <p>2 <span><i class="fa-solid fa-star"></i></span><progress value="20"
+                                    max="100"></progress>246</p>
+                            <p>1 <span><i class="fa-solid fa-star"></i></span><progress value="25"
+                                    max="100"></progress>134</p>
 
                         </div>
                     </div>
@@ -314,48 +339,53 @@
                             <span><progress value="75" max="100"></progress></span>
                             <p>Just Right (75%)</p>
                         </div>
-                      
+
 
                     </div>
-                    <p>View details</p>
+                    <!-- <p>View details</p> -->
 
                 </div>
-                <hr class="hr-line3">
+                <!-- <hr class="hr-line3"> -->
 
-                <div class="product-title-name">
+                <!-- <div class="product-title-name">
                     <h1>Customer Photos (67)</h1>
-                  
-                </div>
+
+                </div> -->
                 <div class="gallery">
-                    <div class="img-gallery">
-                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2020/9/13/34c5786f-d260-4964-b3d9-2d771f78bc2e1599984902206-IMG20200912164916.jpg" alt="">
+                    <!-- <div class="img-gallery">
+                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2020/9/13/34c5786f-d260-4964-b3d9-2d771f78bc2e1599984902206-IMG20200912164916.jpg"
+                            alt="">
                     </div>
                     <div class="img-gallery">
-                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2022/9/1/551fdad7-80da-43e4-a2bf-a9b395d2bcfc1662015403046-IMG_20220901_100549.jpg" alt="">
+                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2022/9/1/551fdad7-80da-43e4-a2bf-a9b395d2bcfc1662015403046-IMG_20220901_100549.jpg"
+                            alt="">
                     </div>
                     <div class="img-gallery">
-                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2020/9/13/60622de5-eea2-4eab-b01d-a6544039bd641599984904727-IMG20200912164809.jpg" alt="">
+                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2020/9/13/60622de5-eea2-4eab-b01d-a6544039bd641599984904727-IMG20200912164809.jpg"
+                            alt="">
                     </div>
                     <div class="img-gallery">
-                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg" alt="">
-                    </div>
+                        <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg"
+                            alt="">
+                    </div> -->
 
                 </div>
 
-                <div class="product-title-name">
+                <!-- <div class="product-title-name">
                     <h1>Customer Reviews (281)</h1>
-                  
+
                 </div>
                 <div class="customer-reviews">
                     <div class="review-customer">
                         <span>5</span>
                         <span><i class="fa-solid fa-star"></i></span>
-                      
+
                     </div>
                     <div class="review-para">
                         <p>amzing product the color is also elegant</p>
                         <div class="img-gallery">
-                            <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg" alt="">
+                            <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg"
+                                alt="">
                         </div>
                         <div class="cname-likes">
                             <div class="cname-date">
@@ -369,18 +399,19 @@
                         </div>
                     </div>
 
-                </div>
-                <hr class="hr-line3">
+                </div> -->
+                <!-- <hr class="hr-line3">
                 <div class="customer-reviews">
                     <div class="review-customer">
                         <span>5</span>
                         <span><i class="fa-solid fa-star"></i></span>
-                      
+
                     </div>
                     <div class="review-para">
                         <p>amzing product the color is also elegant</p>
                         <div class="img-gallery">
-                            <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg" alt="">
+                            <img src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/5/17/1e200bed-92a8-4da2-b23c-6633ee9ba71e1621241304282-3D808F50-F592-4B2C-8F22-F9D1B1B8F36B.jpeg"
+                                alt="">
                         </div>
                         <div class="cname-likes">
                             <div class="cname-date">
@@ -394,13 +425,13 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
                 <hr class="hr-line3">
 
                 <div class="product-all-detail">
                     <p>View all 281 reviews</p>
                     <p>Product Code: <span> 8923841</span></p>
-                    <p>Seller: <span>Truecom Retail</span>  </p>
+                    <p>Seller: <span>Truecom Retail</span> </p>
                     <p>View supplier Information</p>
                 </div>
 
@@ -410,109 +441,151 @@
         </div>
     </div>
 
-    
-        <!-- footer -->
 
-        <div class="footer">
-            <div class="main-footer" >
-                
-                <div class="online-shopping-links">
-                    <h5>ONLINE SHOPPING</h5>
-                    <P>Men</P>
-                    <P>Women</P>
-                    <P>Kids</P> 
-                    <P>Home &Living</P>
-                    <P>Beauty</P>
-                    <P>Gift Cards</P>
-                    <P>Myntra Insider</P>
+    <!-- footer -->
 
-                    <h5>USEFUL LINKS</h5>
-                    <p>Blog</p>
-                    <p>Career</p>
-                    <p>Site Map</p>
-                    <p>Corporate Information</p>
-                    <p>Whitehat</p>
+    <div class="footer">
+        <div class="main-footer">
+
+            <div class="online-shopping-links">
+                <h5>ONLINE SHOPPING</h5>
+                <P>Men</P>
+                <P>Women</P>
+                <P>Kids</P>
+                <P>Home &Living</P>
+                <P>Beauty</P>
+                <P>Gift Cards</P>
+                <P>Myntra Insider</P>
+
+                <h5>USEFUL LINKS</h5>
+                <p>Blog</p>
+                <p>Career</p>
+                <p>Site Map</p>
+                <p>Corporate Information</p>
+                <p>Whitehat</p>
+
+            </div>
+            <div class="customer-policies">
+                <h5>CUSTOMER POLICIES</h5>
+                <p>Contact Us</p>
+                <p>FAQ</p>
+                <p>T&C</p>
+                <p>Terms Of Use</p>
+                <p>Track Orders</p>
+                <p>Shipping</p>
+                <p>Cancellation</p>
+                <p>Returns</p>
+                <p>Privacy Policies</p>
+                <p>Grievance Officer</p>
+            </div>
+            <div class="myntra-app">
+                <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+                <div class="app-img">
+                    <div class="img-apps">
+                        <img src="/images/playstoreimg.png" alt="">
+                    </div>
+                    <div class="img-app">
+                        <img src="/images/appstoreimg.png" alt="">
+                    </div>
 
                 </div>
-                <div class="customer-policies">
-                    <h5>CUSTOMER POLICIES</h5>
-                    <p>Contact Us</p>
-                    <p>FAQ</p>
-                    <p>T&C</p>
-                    <p>Terms Of Use</p>
-                    <p>Track Orders</p>
-                    <p>Shipping</p>
-                    <p>Cancellation</p>
-                    <p>Returns</p>
-                    <p>Privacy Policies</p>
-                    <p>Grievance Officer</p>
+                <h5>KEEEP IN TOUCH</h5>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="policy">
+                <div class="policies">
+                    <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                        alt="">
+                    <p><b> 100% ORIGINAL</b> guarantee for all products at myntra.com</p>
                 </div>
-                <div class="myntra-app">
-                    <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
-                    <div class="app-img">
-                        <div class="img-apps">
-                            <img src="/images/playstoreimg.png" alt="">
-                        </div>
-                        <div class="img-app">
-                            <img src="/images/appstoreimg.png" alt="">
-                        </div>
-                        
-                    </div>
-                    <h5>KEEEP IN TOUCH</h5>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="policy">
-                    <div class="policies">
-                        <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="">
-                        <p><b> 100% ORIGINAL</b> guarantee for all products at myntra.com</p>
-                    </div>
-                    <div class="policies">
-                        <img src=https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png alt="">
-                        <p><b> Return within 30days</b> of receiving your order</p>
-                    </div>
+                <div class="policies">
+                    <img src=https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png
+                        alt="">
+                    <p><b> Return within 30days</b> of receiving your order</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        
-        <script>
-            window.onload = function () {
-                // alert("working")
-    
-                var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
-                // console.log(currentUser,"current user");
-                if (!!currentUser) {
-                    // alert(currenUser,"username")
-                    var logoutDiv = document.getElementById("logout")
-                    var divfromHtml = document.getElementById("switch");
-                    // console.log(divfromHtml, "divfromhtml");
-                    // var h1=document.createElement("h1");
-                    // h1.innerText="Mayuri"
-                    // divfromHtml.append(h1)
-    
-                    var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
-                    var name = `<div>${currentUser.userName}</div>`;
-                    divfromHtml.innerHTML = name;
-                    logoutDiv.innerHTML = button;
-                    // logoutDiv.innerHTML = icon
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+
+                var button = '<span  class="icons"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
+                var name = `<div>${currentUser.userName}</div>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
+            }
+            // else {
+            //     alert("current user absent")
+            // }
+
+
+            var product = JSON.parse(localStorage.getItem("Myntra-current-product"));
+
+            var divToAppendProduct = document.getElementById("singleProduct");
+            var divToAppendProductName = document.getElementById("for-product-name");
+            var divToAppendProductprice = document.getElementById("for-product-price");
+            var divToAppendAddtocart = document.getElementById("for-add-to-cart-btn")
+
+
+            var structure = `<div  id='singlePro' > <img src='${product.proImage} ' /> </div>`
+            var productName = `${product.proName}`
+            var productprice = `₹${product.proPrice}`
+            var addtocart = ` <button onclick='addCart(${JSON.stringify(product)})' class="add-btn-cart-btn" >Add to Bag</button>`
+            console.log(structure, "here");
+            divToAppendProduct.innerHTML = structure;
+            divToAppendProductName.innerHTML = productName;
+            divToAppendProductprice.innerHTML = productprice
+            divToAppendAddtocart.innerHTML = addtocart;
+
+        }
+
+        function addCart(product) {
+            //  alert("Adding to cart")
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser.userEmail);
+            var userdata = JSON.parse(localStorage.getItem("myntra-Users"));
+            for (var i = 0; i < userdata.length; i++) {
+                if (currentUser.userEmail == userdata[i].userEmail) {
+                    // alert("got")
+                    if (userdata[i].cartProducts === undefined) {
+                        // userdata[i].cartProducts = "hello"
+
+                        userdata[i].cartProducts = [product]
+                    } else {
+                        userdata[i].cartProducts.push(product);
+                    }
+                    alert("Product added to cart")
+                    window.location.href = "./cart-1.html"
                 }
-                // else {
-                //     alert("current user absent")
-                // }
-    
-    
             }
-            function logout() {
-                alert("Logout successful.")
-                localStorage.removeItem("myntraCurrentUser")
-                window.location.reload()
-    
-    
-            }
-        </script>
+            localStorage.setItem("myntra-Users", JSON.stringify(userdata))
+        }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("myntraCurrentUser")
+            window.location.reload()
+
+
+        }
+    </script>
 </body>
 
 </html>

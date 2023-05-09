@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+
+    <link rel="stylesheet" href="myntracss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="c-screen">
+
+        <!-- navbar -->
+
+        <div class="c-navbar">
+            <a href="./index.html" class="c-logo">
+                <img src="/images/myntra-logo.png" alt="">
+
+            </a>
+            <div class="checkout-step">
+                <ul class="checkout-list">
+                    <li class="step active">Bag</li>
+                    <li class="divider"></li>
+                    <li class="step">Address</li>
+                    <li class="divider"></li>
+                    <li class="step">Payment</li>
+
+                </ul>
+            </div>
+
+            <div class="right-img-info">
+                <div class="img-secure">
+                    <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" alt="">
+                </div>
+                <div class="right-content">
+                    <p>100% SECURE</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- main content -->
+
+        <div class="c-container">
+            <div class="c-top-content">
+                <div class="c-left-content">
+                    <div class="check-time">
+                        <div class="check-d-time">
+                            <p>Check delivery time & services</p>
+                        </div>
+                        <div class="en-pincode">
+                            <button>Enter Pin code</button>
+                        </div>
+                    </div>
+
+                    <!-- available offers -->
+
+                    <div class="c-av-offers">
+                        <div class="c-head">
+                            <span><i class="fa-solid fa-certificate"></i></span>
+                            <h1>Available Offers</h1>
+                        </div>
+                        <div class="c-av-para">
+                            <p>Get up to Rs 500 Cashback on CRED Pay UPI (Android Devices only) on a minimum spend of Rs
+                                1000. TCA</p>
+                        </div>
+                        <div class="c-s-more">
+                            <p>Show more</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- login now -->
+
+                    <div class="c-login">
+
+                        <i class="fa-solid fa-truck"></i>
+                        <p>Login to avoid convinence fee on your first order.</p>
+                        <span>Login Now</span>
+
+                    </div>
+
+                    <!-- select items -->
+
+                    <div class="select-item">
+                        <div class="c-i-selected">
+                            <input type="checkbox">
+                            <p>1/1 ITEMS SELECTED</p>
+                        </div>
+                        <div class="select-options">
+                            <span>Remove</span>
+                            <span>Move to wishlist</span>
+                        </div>
+
+                    </div>
+
+                    <!-- selected product Information -->
+
+                    <div id="finalcart">
+                        <div class="s-p-info">
+
+                            <div class="s-p-img" id="product-img">
+                                <!-- <img src="https://assets.myntassets.com/w_111,h_148,dpr_1.3499999046325684,q_60,c_limit,fl_progressive/h_148,q_60,w_111/v1/assets/images/8923841/2019/6/3/736b9f2c-3a49-41a9-828c-1e0218b62e431559550212164-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-1.jpg"
+                                    alt=""> -->
+                            </div>
+                            <div class="s-p-content">
+                                <h1 id="product-name"> </h1>
+                                <p>Men Boxy Fit Printed Round Neck Pure Cotton Shirt</p>
+                                <p>Sold by: Truecom Retail</p>
+                                <div class="select-size-qty">
+                                    <div class="select-size">
+                                        <label for="size">Size: </label>
+                                        <select name="size" id="cars">
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                            <option value="XXL">XXL</option>
+    
+                                        </select>
+                                    </div>
+                                    <div class="select-qty">
+                                        <label for="Qty">Qty: </label>
+                                        <select name="quantity" id="cars">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+    
+                                        </select>
+                                    </div>
+    
+    
+                                </div>
+    
+                                <div class="c-price-info">
+                                    <span class="c-price" id="product-price">₹ </span>
+                                    <span class="c-strike-price">₹1,099</span>
+                                    <span class="c-percentage">40% OFF</span>
+    
+                                </div>
+    
+                                <div class="c-return-policy">
+                                    <span><i class="fa-regular fa-circle-left"></i></span>
+                                    <p><span>14 days</span>return available</p>
+                                </div>
+                            </div>
+                            <div class="close-button">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                   
+
+                    <div class="ex-bag">
+                        <div class="bag-img">
+                            <img src="https://constant.myntassets.com/checkout/assets/img/products-blurred.png" alt="">
+                        </div>
+                        <div class="w-content">
+                            <p>Login to see items from your existing bag and wishlist.</p>
+                        </div>
+                        <div class=" c-login-now">
+                            <p>Login Now</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ---------right side--------  -->
+
+                <div class="c-right-content">
+
+                    <div class="c-coupons">
+                        <h1 class="c-heading">COUPONS</h1>
+                        <div class="coupons">
+                            <span><i class="fa-solid fa-tag"></i></span>
+                            <p>apply coupons</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="c-l-login">
+                        <p><span>Login</span> to get upto ₹300 OFF on first order</p>
+                    </div>
+                    <hr class="c-hr-line">
+
+
+                    <!-- gifting & personalization -->
+
+                    <div class="gift-p">
+                        <h1 class="c-heading">GIFTING & PERSONALIZATION</h1>
+
+                        <div class="gift-personalization">
+                            <div class="gift-img">
+                                <img src="https://constant.myntassets.com/checkout/assets/img/gift-big.png" alt="">
+                            </div>
+                            <div class="c-gift">
+                                <p>Buying for a loved one?</p>
+                                <div class="c-gift-para">
+                                    <p>Gift wrap and personalised message on card, Only for ₹25</p>
+                                </div>
+                                <button>add gift wrap</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- price details & total amount -->
+
+                    <div class="c-price-detail">
+                        <h1 class="c-heading">PRICE DETAILS (1 Item)</h1>
+                        <div class="c-total-price">
+                            <div class="c-price-summery">
+                                <span>Total MRP</span>
+                                <span>₹1,099</span>
+                            </div>
+                            <div class="c-price-summery">
+                                <span>Discount on MRP</span>
+                                <span class="c-discount-amt">-₹440</span>
+                            </div>
+                            <div class="c-price-summery">
+                                <span>Coupon Discount</span>
+                                <span class="c-apply-coupon">Apply Coupon</span>
+                            </div>
+                            <div class="c-price-summery">
+                                <span>Convenience Fee <span class="c-know-more">know More</span></span>
+                                <span>₹99</span>
+                            </div>
+                            <hr class="c-hr-line">
+                            <div class="c-price-summery">
+                                <span class="c-total-amt">Total Amount</span>
+                                <span class="c-total-amt">₹758</span>
+                            </div>
+
+                        </div>
+                        <div class="place-order-btn">
+                            <button onclick="window.location.href='./successpage.html'">Place Order</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+                <!-- ----bottom content---- -->
+
+            <div class="c-bottom-content">
+
+                <div>
+                    <hr class="c-hr-line">
+                </div>
+                <div class="c-b-content-head">
+                    Get Free Shipping by adding more:
+                </div>
+
+                <div class="similar-products">
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/16407468/2021/12/28/fce7ca1e-01ec-4c12-a90f-c7b75abda0e01640669480687-Difference-of-Opinion-Men-Tshirts-4021640669480120-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/17240500/2023/2/16/65f355c2-6093-47ed-ad51-fab3db0788f31676531597373-DILLINGER-Men-Black--Purple-Typography-Printed-Pure-Cotton-L-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/2095974/2017/11/6/11509971731108-Kook-N-Keech-Disney-Men-Tshirts-3801509971730877-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/8923741/2019/6/3/f8e7a9ff-61ad-4d2b-a3b5-e6a27aa714361559562816824-Minions-by-Kook-N-Keech-Men-White-Printed-Round-Neck-T-shirt-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/2388250/2023/1/25/aeb980d4-67c3-4e0c-8f26-2543b82fc72c1674651811349-Kook-N-Keech-Men-Black-Striped-Oversized-Longline-T-shirt-90-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/10283341/2019/10/19/2da0cb27-4f8e-4543-b245-3ca71e488d871571481166943-Dexter-by-Kook-N-Keech-Men-Tshirts-2521571481165693-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/17149982/2022/3/9/cc0a2615-84d5-435b-a1c0-d2531acd99db1646826373792-Difference-of-Opinion-Men-Grey--Red-Cotton-Printed-Drop-Shou-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="c-similar-product">
+                        <div class="c-s-img">
+                            <img src="https://assets.myntassets.com/q_95,w_172,c_limit,fl_progressive/assets/images/8912651/2019/4/24/41876c16-db7c-4b74-884a-1cca80ee32291556098853878-Kook-N-Keech-Marvel-Men-White-Printed-Round-Neck-T-shirt-890-1.jpg" alt="">
+                        </div>
+                        <div class="c-sp-info">
+                            <div class="c-sp-brand-name">
+                                Difference of Opinion
+                            </div>
+                            <div class="c-sp-desc">
+                                Men Solid Oversized Cotton
+                            </div>
+                            <span class="c-sp-price-info">
+                                ₹532
+                            </span>
+                            <span class="c-sp-strike-price">
+                                ₹1299
+                            </span>
+                            <span class="c-sp-discount">
+                                (59% OFF)
+                            </span>
+                            <hr class="c-hr-line">
+                            <div class="c-sp-add-bag">
+                                Add to bag
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <hr class="c-hr-line">
+
+            <div class="c-payment-options">
+                <div class="c-card-opt">
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt="">
+                    </div>
+                    <div class="c-payment-opt">
+                        <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt="">
+                    </div>
+                </div>
+                
+
+            <a href="" class="c-contact-us"> <span>Need Help ? Contact Us</span></a>
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout() " class="logout-button-txt">Logout</button></span>'
+                var name = `<div>${currentUser.userName}</div>`;
+                // divfromHtml.innerHTML = name;
+                // logoutDiv.innerHTML = button;
+                // logoutDiv.innerHTML = icon
+            }
+            // else {
+            //     alert("current user absent")
+            // }
+
+            var currentUser = JSON.parse(localStorage.getItem("myntraCurrentUser"))
+            var userdata = JSON.parse(localStorage.getItem("myntra-Users"))
+            var divToAppendProductImage = document.getElementById("product-img")
+            var divToAppendProductName = document.getElementById("product-name")
+            var divToAppendProductPrice = document.getElementById("product-price")
+            var divToAppendAllProducts = document.getElementById("finalcart")
+
+
+            var products;
+            for (var i = 0; i < userdata.length; i++) {
+                if (currentUser.userEmail == userdata[i].userEmail) {
+                    products = userdata[i].cartProducts
+                }
+            }
+            var finalImage = ""
+            var finalName = ""
+            var finalPrice = ""
+            var finalProductCart  = "";
+
+            for (var i = 0; i < products.length; i++) {
+                finalProductCart +=`<div class="s-p-info">
+
+<div class="s-p-img" id="product-img">
+    <img src="${products[i].proImage}"
+        alt=""> 
+</div>
+<div class="s-p-content">
+    <h1 id="product-name">  ${products[i].proName} </h1>
+    <p>Men Boxy Fit Printed Round Neck Pure Cotton Shirt</p>
+    <p>Sold by: Truecom Retail</p>
+    <div class="select-size-qty">
+        <div class="select-size">
+            <label for="size">Size: </label>
+            <select name="size" id="cars">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+
+            </select>
+        </div>
+        <div class="select-qty">
+            <label for="Qty">Qty: </label>
+            <select name="quantity" id="cars">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+            </select>
+        </div>
+
+
+    </div>
+
+    <div class="c-price-info">
+        <span class="c-price" id="product-price">₹${products[i].proPrice} </span>
+        <span class="c-strike-price">₹1,099</span>
+        <span class="c-percentage">40% OFF</span>
+
+    </div>
+
+    <div class="c-return-policy">
+        <span><i class="fa-regular fa-circle-left"></i></span>
+        <p><span>14 days</span>return available</p>
+    </div>
+</div>
+<div class="close-button">
+    <i class="fa-solid fa-xmark"></i>
+</div>
+
+
+
+</div>`
+            }
+
+            divToAppendProductImage.innerHTML = finalImage;
+            divToAppendProductName.innerHTML = finalName;
+            divToAppendProductPrice.innerHTML = finalPrice;
+            divToAppendAllProducts.innerHTML = finalProductCart;
+        }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("myntraCurrentUser")
+            window.location.reload()
+
+
+        }
+    </script>
+</body>
+
+</html>
