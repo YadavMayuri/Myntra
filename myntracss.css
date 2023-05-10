@@ -2140,5 +2140,84 @@ font-weight: 700;
 }
 
 
+/* register page */
+.myntra-regl-screen{
+    background-color: #fdefea;
+    width: 100%;
+    height: 85vh;
+}
+.bottom-content-wrap{
+    padding: 8px 24px 12px 24px;
+    background-color: white;
+
+}
+.my-form-wrap{
+    width: 34%;
+    margin:  auto;
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+.lgimage-wrapper{
+    width: 100%;
+}
+.lgimage-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.sign-txt{
+    font-size: 18px;
+}
+.orcl{
+    font-size: 14px;
+    font-weight: normal;
+}
+.lgclass{
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.form-content{
+    margin-top: 15px;
+}
+.form-content form div input{
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid rgb(137, 137, 137);
+    border-radius: 3px;
+}
+.terms-policy{
+    font-size: 12px;
+}
+.termpolicy-highlight{
+    color: #ff3f6c;
+    font-weight: 600;
+}
+.r-otp-btn{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ff3e6c;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 

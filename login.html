@@ -4,34 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./myntracss.css">
+    <title>Myntra</title>
+    <link rel="shortcut icon" href="/images/myntra-logo.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="myntracss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-    <div class="myntra-screen">
-        <div class="my-form-wrap">
-            <h1>login</h1>
+    <div id="navbar">
 
-            <div class="form-content">
-                <form action="" onsubmit="login(event)">
-                    
-                    <div class="email-info">
-                        <input type="email" id="useremail" placeholder="Enter Your Email">
-                    </div>
-                    <div class="password-content">
-                        <input type="password" id="userpassword" placeholder="Enter Your password">
-                    </div>
-                  
-                    <div class="remember-me">
-                        <input type="checkbox">
-                        <span>Remember Me</span>
-                    </div>
-                    <p class="terms-policy">By continuing, I agree to <span class="highlight">Terms of Use</span> &
-                        <span class="highlight">Privacy Policy</span>
-                    </p>
-                    <input type="submit" value="login" class="r-otp-btn">
-                </form>
+        <!-- Logo -->
+        <a href="./index.html" class="logo">
+            <img src="/images/myntra-logo.png" alt="">
+        </a>
+
+        <!-- navbar-links -->
+        <div class="nav-link">
+
+            <div>
+                <h1>men</h1>
+            </div>
+            <div>
+                <h1>women</h1>
+            </div>
+            <div>
+                <h1>kids</h1>
+            </div>
+            <div>
+                <h1>home & living</h1>
+            </div>
+            <div>
+                <h1>beauty</h1>
+            </div>
+            <div>
+                <h1>studio <sup>new</sup></h1>
+            </div>
+        </div>
+
+        <!-- searchbar -->
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+
+        <!-- navbar-icons -->
+        <div class="main-icons">
+            <a href="./register.html" class="icons">
+                <i class="fa-regular fa-user"></i>
+                <p id="switch">profile</p>
+            </a>
+            <div class="icons">
+                <i class="fa-regular fa-heart"></i>
+                <p> wishlist</p>
+            </div>
+            <a href="./cart-1.html" class="icons">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>bag</p>
+            </a>
+            <div class="icons" id="logout">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="myntra-regl-screen">
+        <div class="my-form-wrap">
+            <div class="lgimage-wrapper">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/1/25/f5e9a029-33c3-4a92-811b-ef7917fe6d441674670210687-offer-banner-300-600x240-code-_-MYNTRA300.jpg"
+                    alt="">
+            </div>
+
+            <div class="bottom-content-wrap">
+                <h1 class="sign-txt">Login </h1>
+
+                <div class="form-content">
+                    <form action="" onsubmit="login(event)">
+                        
+                        <div class="email-info">
+                            <input type="email" id="useremail" placeholder="Enter Your Email">
+                        </div>
+                        <div class="password-content">
+                            <input type="password" id="userpassword" placeholder="Enter Your password">
+                        </div>
+                       
+                        <p class="terms-policy">By continuing, I agree to <span class="termpolicy-highlight">Terms of
+                                Use</span> &
+                            <span class="termpolicy-highlight">Privacy Policy</span>
+                        </p>
+                        <input type="submit" value="login" class="r-otp-btn">
+                        <p class="terms-policy">Have trouble logging in?<span class="termpolicy-highlight"> Get help</span></p>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
 
